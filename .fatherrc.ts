@@ -11,7 +11,7 @@ const options: IBundleOptions = {
     // @ts-ignore
     doc: {
         // themeConfig: { mode: 'dark' },
-        base: '/beast-lib'
+        base: '/beast-utils'
     },
     // 是否把 helper 方法提取到 @babel/runtime 里。只对 esm 有效。官网：https://babeljs.io/docs/en/babel-runtime
     runtimeHelpers: true,
