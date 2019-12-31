@@ -1,0 +1,60 @@
+---
+menu: 工具方法
+name: array 数组
+route: /array
+---
+import './docz.less'
+
+# array 数组
+数组类型数据的一些操作方法。
+
+## recursiveMap
+递归遍历数组，并返回一个新的数组。类似 lodash 的 map 方法。
+
+### 参数
+
+```typescript
+/**
+ * 递归为对象数组里的对象，添加 key 字段以及其他额外字段
+ * @param data Array<Object>
+ * @param keyAccordName String 默认是'id'；为对象添加的'key'字段，是参照对象里哪个原有的字段 作为值的
+ * @param addFields Array<Array(2)> 需要添加的字段信息，是个二维数组，例如：[['name', 'title'], ['code', 'keyCode']]，表示添加的'title'字段值为’name'字段的值，以此类推
+ * @returns {Array}
+ */
+const recurAddKeyAndFileds = (data: Array<any>, keyAccordName = 'id', addFields = []) => []
+```
+
+### 示例
+```javascript
+let arr = [
+  {
+    name: '杨云', 
+    children:[
+        { name: '肖萨', children: [
+            { name: '张小娴' }
+        ] }
+    ]
+  }, 
+  { name: '小松' }
+];
+const newArr = recursiveMap(arr, (value, key, parentValue) => {
+    return { ...value, name: `${value.name}-xxx` }
+});
+
+/**
+* 输出：
+* [
+    {
+      name: '杨云-xxx', 
+      children:[
+          { name: '肖萨-xxx', children: [
+              { name: '张小娴-xxx' }
+          ] }
+      ]
+    }, 
+    { name: '小松-xxx' }
+  ]
+*/
+console.log(newArr);
+
+```
