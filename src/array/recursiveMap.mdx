@@ -1,14 +1,11 @@
 ---
-menu: 工具方法
-name: array 数组
-route: /array
+menu: Array
+name: recursiveMap 递归遍历
+route: /array/recursiveMap
 ---
-import './docz.less'
+import '../docz.less'
 
-# array 数组
-数组类型数据的一些操作方法。
-
-## recursiveMap
+# recursiveMap
 递归遍历数组，并返回一个新的数组。类似 lodash 的 map 方法。
 
 ### 参数
@@ -58,3 +55,11 @@ const newArr = recursiveMap(arr, (value, key, parentValue) => {
 console.log(newArr);
 
 ```
+# recurRemoveFields
+### 数组对象中 删除 Key
+
+```typescript
+export const recurRemoveFields = (data, rmFields = ['key']) => [];
+
+```
+

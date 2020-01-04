@@ -1,0 +1,35 @@
+---
+menu: Helpers
+name: getPageQuery 获取url参数
+route: /helper/getPageQuery
+---
+import '../docz.less'
+
+# getPageQuery
+对 页面 路由（href）中的参数截取，返回一段字符串
+
+### 参数
+
+```typescript
+/**
+* 截取 url 参数
+*
+* @return string
+*
+*/
+const getPageQuery = ()=>string
+```
+
+### 实例
+
+```javascript
+let url ='http://www.baidu.com?name=李现&age=30'
+let param = getPageQuery();
+
+/**
+* 输出：
+* param = 'name=李现&age=30'
+*
+*/
+
+```

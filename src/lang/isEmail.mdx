@@ -1,0 +1,33 @@
+---
+menu: Lang
+name: isEmail 邮箱格式
+route: /lang/isEmail
+---
+import '../docz.less'
+
+# isEmail
+对电子邮箱的格式进行判断，返回 true 或者 false
+
+### 参数
+
+```typescript
+/**
+* 判断是否为邮箱地址
+* @param {String} str
+*  @return {Boolean}
+*/
+const isEmail = (str:string)=>Boolean
+```
+
+### 实例
+
+```javascript
+let str = '2196064304@qq.com'
+let isTrue = isEmail(str);
+
+/**
+*输出：
+* isTrue = true;
+*/
+
+```

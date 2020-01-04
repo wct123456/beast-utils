@@ -1,0 +1,42 @@
+---
+menu: Lang
+name: isObjectHadEmpty 对象是否含有空值
+route: /lang/isObjectHadEmpty
+---
+import '../docz.less'
+
+# isObjectHadEmpty
+判断对象是否含有空值
+
+### 参数
+
+```typescript
+/**
+ * 判断对象是否含有空值
+ * @param obj Object 待判断的对象
+ * @param keyArray Array 指定需要做判断的属性，不指定，则默认判断所有属性是否为空
+ * @returns {boolean}
+ */
+const isObjectHadEmpty = (obj, keyArray) => boolean;
+```
+
+### 实例
+
+```javascript
+let srcO = {
+    id:1,
+    name:'wct',
+    code:'',
+    userCode:'520'
+   ...
+};
+let keyArray = ['id','name','code'];
+let hadEmp = isObjectHadEmpty(obj, keyArray);
+
+/**
+* 输出：
+* hadEmp = true
+*
+*/
+
+```

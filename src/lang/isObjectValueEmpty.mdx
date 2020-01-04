@@ -1,0 +1,40 @@
+---
+menu: Lang
+name: isObjectValueEmpty 对象都为空值
+route: /lang/isObjectValueEmpty
+---
+import '../docz.less'
+
+# isObjectValueEmpty
+判断对象 v 的值是否都为空
+
+### 参数
+
+```typescript
+/**
+ * 判断对象 v 的值是否都为空
+ * @param obj
+ *
+ */
+const isObjectValueEmpty = (obj) => boolean;
+```
+
+### 实例
+
+```javascript
+let obj = {
+    id:'',
+    name:'',
+    code:'',
+    userCode:''
+   ...
+};
+let hadEmp = isObjectValueEmpty(obj);
+
+/**
+* 输出：
+* hadEmp = true
+*
+*/
+
+```

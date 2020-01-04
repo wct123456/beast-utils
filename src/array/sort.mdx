@@ -1,0 +1,33 @@
+---
+menu: Array
+name: sort 排序
+route: /array/sort
+---
+import '../docz.less'
+
+# sort
+对数组中的数字进行排序或者升序。类似 JavaScript 中的 sort 方法。
+
+### 参数
+
+```typescript
+/**
+* 此方法接收两个参数 data, str, data 是数字数组，str 是 asc(升序)， desc(降序)。
+* param data Array <Number>
+* param str String <'asc'> <'desc'>
+*/
+const sort = (data:Array<number>,str='asc')=>data
+```
+
+### 实例
+
+```javascript
+let data = [9,52,2,8,3];
+let newData = sort(data,'asc');
+
+/**
+*输出：
+* newData = [2,3,8,52];
+*/
+
+```

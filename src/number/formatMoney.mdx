@@ -1,0 +1,32 @@
+---
+menu: Number
+name: formatMoney 逗号分隔金额
+route: /number/formatMoney
+---
+import '../docz.less'
+
+# formatMoney
+当处理金额时，调用此方法后，金额会被逗号分隔
+
+### 参数
+
+```typescript
+/**
+* 调用此方法后，金额会被逗号分隔
+* @param num<number>
+*
+*/
+const formatMoney = (num) => string;
+```
+### 实例
+
+```javascript
+let num  = 566000
+let money = formatMoney(num);
+
+/**
+* 输出：
+* money = '566,000'
+*/
+
+```

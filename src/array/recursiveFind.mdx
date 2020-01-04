@@ -1,0 +1,34 @@
+---
+menu: Array
+name: recursiveFind 查找数组对象
+route: /array/recursiveFind
+---
+import '../docz.less'
+
+# recursiveFind
+ 在一个数组对象中，查找满足条件的一条数据
+
+### 参数
+
+```typescript
+/**
+* 数组对象
+* @param data Array
+* @param func function
+* @param childKeyName
+*/
+const recursiveFind = (data, func, childKeyName = 'children')=>object
+```
+
+### 实例
+
+```javascript
+let data = [{id:'231',...}];
+let obj = recursiveFind(data,(obj, key)=>obj.id==='231',childKeyName = 'children');
+
+/**
+* 输出：
+* obj = [{id:'231',...}];
+*/
+
+```

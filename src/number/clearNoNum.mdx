@@ -1,0 +1,33 @@
+---
+menu: Number
+name: clearNoNum 对金额进行处理
+route: /number/clearNoNum
+---
+import '../docz.less'
+
+# clearNoNum
+对金额的值进行处理，返回符合 金额 规则的数值
+
+### 参数
+
+```typescript
+/**
+* 处理金额
+* @param val<string|number>
+*
+*/
+const clearNoNum = (val) => val;
+```
+
+### 实例
+
+```javascript
+let val  = '..302'
+let money = clearNoNum(val);
+
+/**
+* 输出：
+* money = '0.302'
+*/
+
+```

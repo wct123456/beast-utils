@@ -1,0 +1,39 @@
+---
+menu: Array
+name: addListNumber 分页处理数据
+route: /array/addListNumber
+---
+import '../docz.less'
+
+# addListNumber
+ 从后台拿取没处理过的数据，如果需要渲染到table组件，此方法会为data数组对象加上
+ no,key
+
+### 参数
+
+```typescript
+/**
+* 处理数据，用于table组件
+* param data Array
+* param page object
+*/
+const addListNumber = (data, page)=>data
+```
+
+### 实例
+
+```javascript
+let data = [{id:'231',...}];
+let page = {
+    current:2,
+    size:20,
+    ....
+}
+let list = addListNumber(data,page);
+
+/**
+* 输出：
+* list = [{id:'231',key:0,no:21,...}];
+*/
+
+```
