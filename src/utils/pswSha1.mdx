@@ -1,0 +1,36 @@
+---
+menu: Utils
+name: pswSha1 对用户名和密码Hash加密
+route: /utils/pswSha1
+---
+import '../docz.less'
+
+# pswSha1
+对用户名和密码Hash加密
+
+### 参数
+
+```typescript
+/**
+* 对用户名和密码Hash加密
+* @param values<Object>
+*
+*/
+const pswSha1 = (values) => string;
+```
+
+### 实例
+
+```javascript
+let values  = {
+    username:'wct',
+    password:'123'
+}
+let values = pswSha1(values);
+
+/**
+* 加密输出：
+* values = *****=****&***=****
+*/
+
+```

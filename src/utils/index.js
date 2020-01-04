@@ -1,5 +1,5 @@
 import {isNumber,pick,trim,isEmpty,isObject,forEach,isArray,isEqual,functionsIn,omit} from "lodash-es";
-
+import cryptoCore from './cryptoCore'
 
 export function urlEncode(param) {
     let paramStr = urlEncodeFunc(param);
@@ -87,4 +87,12 @@ export const removeStorage = (key) => {
 export const clearStorage = () => {
     window.localStorage.removeItem('accountInfo');
     window.localStorage.removeItem('userInfo');
+};
+export const pswSha1 = (values) => {
+    let { username, password } = values;
+    var ciphertext = username.toLowerCase() + password;
+    for (var i = 0; i < 1024; i++) {
+        ciphertext = cryptoCore.SHA1(ciphertext);
+    }
+    return ciphertext.toString();
 };

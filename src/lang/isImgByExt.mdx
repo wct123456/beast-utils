@@ -1,0 +1,33 @@
+---
+menu: Lang
+name: isImgByExt 图片判断
+route: /lang/isImgByExt
+---
+import '../docz.less'
+
+# isImgByExt
+对图片路径进行判断，返回 true 或者 false
+
+### 参数
+
+```typescript
+/**
+* 判断图片是否存在
+* @param ext {String}
+*  @return {Boolean}
+*/
+const isImgByExt = (ext: [string])=>Boolean
+```
+
+### 实例
+
+```javascript
+let str = '/src/image/1.png'
+let isImg = isImgByExt(str);
+
+/**
+* 输出：
+* isImg = true;
+*/
+
+```
