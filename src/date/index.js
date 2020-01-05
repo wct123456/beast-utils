@@ -1,4 +1,4 @@
-import moment from 'moment'
+import moment from 'dayjs'
 
 /**
  * 当前系统的 日期格式
