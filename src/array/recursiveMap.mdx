@@ -59,7 +59,25 @@ console.log(newArr);
 ### 数组对象中 删除 Key
 
 ```typescript
-export const recurRemoveFields = (data, rmFields = ['key']) => [];
+const recurRemoveFields = (data, rmFields = ['key']) => [];
 
+```
+### 示例
+
+```typescript
+   let data = [
+   {key:'123566',name:'wct',...},
+   {key:'5622',name:'dx',...}
+   ];
+   let res = recurRemoveFields(data,['key']);
+
+/**
+*
+* 输出：
+* res  = [
+* {name:'wct',...},
+* {name:'dx',...}
+* ]
+*/
 ```
 
