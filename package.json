@@ -1,7 +1,7 @@
 {
   "name": "beast-utils",
   "version": "0.0.1",
-  "description": "一个工具方法库，用于 beast-lib",
+  "description": "一个工具方法库",
   "repository": "https://github.com/laixstx/beast-utils.git",
   "keywords": [
     "utils",
@@ -43,11 +43,11 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.7.7",
+    "dayjs": "^1.8.18",
     "lodash-es": "^4.17.15",
-    "moment": "^2.24.0",
+    "qs": "latest",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "umi": "^2.12.8",
-    "qs": "latest"
+    "umi": "^2.12.8"
   }
 }
