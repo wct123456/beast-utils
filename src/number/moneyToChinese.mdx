@@ -1,0 +1,33 @@
+---
+menu: Number
+name: moneyToChinese 数字金额大写转换
+route: /number/moneyToChinese
+---
+import '../docz.less'
+
+# moneyToChinese
+ 数字金额大写转换(可以处理整数,小数,负数)
+
+### 参数
+
+```typescript
+/**
+ * 数字金额大写转换(可以处理整数,小数,负数)
+ * @param money 数字金额
+ * @returns {string}
+ */
+const moneyToChinese = (money) => money;
+```
+
+### 实例
+
+```javascript
+let val  = 566000
+let money = moneyToChinese(val);
+
+/**
+* 输出：
+* money = '伍陆万陆仟元'
+*/
+
+```

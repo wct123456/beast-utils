@@ -1,0 +1,47 @@
+---
+menu: Lang
+name: isObjectValEqual 对比两个对象
+route: /lang/isObjectValEqual
+---
+import '../docz.less'
+
+# isObjectValEqual
+对比两个对象的值是否相等（只支持基础数据类型的比较）
+
+### 参数
+
+```typescript
+/**
+ * 对比两个对象的值是否相等（只支持基础数据类型的比较）needCheckAttrs (需要忽略的属性 key)
+ *@param srcObj<Object>
+ *@param othObj<Object>
+ *@param needCheckAttrs<Array>
+ */
+const isObjectValEqual = (srcObj,othObj,needCheckAttrs=null) => boolean;
+```
+
+### 实例
+
+```javascript
+let srcObj = {
+    id:'1',
+    name:'2',
+    code:'3',
+    codeValue:''
+};
+let othObj = {
+    id:'1',
+    name:'2',
+    code:'3',
+    codeValue:'wct'
+};
+let needCheckAttrs = ['codeValue']
+let had = isObjectValueEmpty(srcObj,othObj,needCheckAttrs);
+
+/**
+* 输出：
+* had = true
+*
+*/
+
+```

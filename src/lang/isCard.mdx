@@ -1,0 +1,33 @@
+---
+menu: Lang
+name: isCard 身份证格式
+route: /lang/isCard
+---
+import '../docz.less'
+
+# isCard
+对身份证的格式进行判断，返回 true 或者 false
+
+### 参数
+
+```typescript
+/**
+* 判断身份证号码是否正确
+* @param {String|Number} str
+*  @return {Boolean}
+*/
+const isCard = (str: [string,number])=>Boolean
+```
+
+### 实例
+
+```javascript
+let str = 440823199505152036
+let isTrue = isCard(str);
+
+/**
+* 输出：
+* isTrue = true;
+*/
+
+```

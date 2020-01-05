@@ -1,0 +1,49 @@
+---
+menu: Helpers
+name: locale 配置国际化
+route: /helper/locale
+---
+import '../docz.less'
+
+# locale
+配置国际化语言，可自由切换语言种类 English Chinese
+
+### 参数
+
+```typescript
+/**
+目前为纯组件，真正使用配置国际化语言，需要依靠国际化（locale）依赖
+@formatMessage
+@setLocale
+@zh_cn
+*/
+```
+# hadLocale
+
+```typescript
+/**
+ * 判断 key 是否有配置国际化
+ * @param key
+ * @return Boolean
+ */
+ const hadLocale = (zh_cn=null,key)=>Boolean
+```
+### 实例
+
+```typescript
+import zh_cn from '@/locales/zh-CN';
+import {hadLocale} from 'beast-utils/helpers/locale';
+export function newHadLocale(key,zh_cn){
+    return (hadLocale(zh_cn,key))(zh_cn,key)
+}
+//-----------使用-------------
+let key = '中文';
+let isTrue = newHadLocale(key);
+
+/**
+* 假设zh-CN已经配置好国际化则输出：
+* isTrue = true
+*
+*/
+
+```

@@ -1,0 +1,33 @@
+---
+menu: Date
+name: datetime2Date （YYYY-MM-DD HH:mm:ss） 转成 （YYYY-MM-DD）
+route: /date/datetime2Date
+---
+import '../docz.less'
+
+# datetime2Date
+将 datetime（YYYY-MM-DD HH:mm:ss） 转成 date（YYYY-MM-DD）
+
+### 参数
+
+```typescript
+/**
+ * 将 datetime（YYYY-MM-DD HH:mm:ss） 转成 date（YYYY-MM-DD）
+ * @param datetime
+ * @returns {string}
+ */
+ datetime2Date = (datetime) => 'YYYY-MM-DD';
+```
+
+### 实例
+
+```javascript
+
+let date = datetime2Date('2020-01-01 00:00:00');
+
+/**
+*输出：
+* date = '2020-01-01';
+*/
+
+```

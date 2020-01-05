@@ -1,0 +1,33 @@
+---
+menu: Utils
+name: getStorage 获取缓存
+route: /utils/getStorage
+---
+import '../docz.less'
+
+# getStorage
+根据 key 从浏览器获取之前保存的缓存，不存在返回 undefined
+
+### 参数
+
+```typescript
+/**
+ * 获取之前保存的缓存，传入 key 返回 value
+ * @param key <string>
+ *
+ */
+const getStorage = (key) =>string;
+```
+
+### 实例
+
+```javascript
+let save = getStorage('save');
+
+/**
+* 输出：
+* save =  '保存，下次使用'
+*
+*/
+
+```

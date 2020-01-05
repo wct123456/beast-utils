@@ -1,0 +1,45 @@
+---
+menu: Utils
+name: getFromObjByKeys 取特定对象的值
+route: /utils/getFromObjByKeys
+---
+import '../docz.less'
+
+# getFromObjByKeys
+在一个对象中 选取 特定的值，返回一个新的对象
+
+### 参数
+
+```typescript
+/**
+* 在一个对象中 选取 特定的值，返回一个新的对象
+* @param srcO<Object>
+* @param keys<Array>
+*
+*/
+const getFromObjByKeys = (srcO, keys) => Object;
+```
+
+### 实例
+
+```javascript
+let srcO = {
+    id:1,
+    name:'wct',
+    code:'250',
+    userCode:'520'
+   ...
+};
+let keys = ['id','name','code'];
+let obj = getFromObjByKeys(srcO,keys);
+
+/**
+* 输出：
+* obj = {
+*    id:1,
+*    name:'wct',
+*    code:'250',
+* }
+*/
+
+```

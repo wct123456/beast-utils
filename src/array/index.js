@@ -114,3 +114,32 @@ export const addListNumber = (data, page) => {
     }
     return data;
 };
+
+export const sort = (data,str)=>{
+    let mp;
+    if(data instanceof Array){
+        mp  = [...data];
+        let temp;
+        for(let i=0;i<mp.length;i++){
+            for(let j=i+1;j<mp.length+1;j++){
+
+                if(str==='asc'||!str){
+                    if(mp[i]>mp[j]){
+                        temp = mp[i];
+                        mp[i] = mp[j];
+                        mp[j] = temp;
+                    }
+                }else if(str==='desc'){
+                    if(mp[i]<mp[j]){
+                        temp = mp[i];
+                        mp[i] = mp[j];
+                        mp[j] = temp;
+                    }
+                }
+            }
+        };
+        return mp;
+    }else{
+        return data;
+    }
+};

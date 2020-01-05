@@ -1,0 +1,35 @@
+---
+menu: Helpers
+name: getUserInfo 获取用户信息
+route: /helper/getUserInfo
+---
+import '../docz.less'
+
+# getUserInfo
+在 浏览器缓存中 读取用户保存的信息，用户信息不存在则跳转路由 到 '/user'
+
+### 参数
+
+```typescript
+/**
+* 读取用户信息
+*
+* @return <any>
+*
+*/
+const getUserInfo = ()=>string
+```
+
+### 实例
+
+```javascript
+
+let userInfo = getUserInfo();
+
+/**
+* 输出：
+* userInfo = {id:1,name:'zs',code:'zs',...}
+*
+*/
+
+```

@@ -1,0 +1,33 @@
+---
+menu: Date
+name: fixedZero 固定零点
+route: /date/fixedZero
+---
+import '../docz.less'
+
+# fixedZero
+数字 满足小于9，则在前面加上 0 ，一般用于时间 2020:01:01
+
+### 参数
+
+```typescript
+/**
+* 数字 满足小于9，则在前面加上 0 ，一般用于时间 2020:01:01
+* @param val<String | Number>
+*
+*/
+const fixedZero = (val) => string;
+```
+
+### 实例
+
+```javascript
+let val  = 9
+let newVal = fixedZero(val);
+
+/**
+* 输出：
+* newVal = '09'
+*/
+
+```

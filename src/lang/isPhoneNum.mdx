@@ -1,0 +1,33 @@
+---
+menu: Lang
+name: isPhoneNum 手机格式
+route: /lang/isPhoneNum
+---
+import '../docz.less'
+
+# isPhoneNum
+对手机的格式进行判断，返回 true 或者 false
+
+### 参数
+
+```typescript
+/**
+* 判断是否为手机号
+* @param {String|Number} str
+*  @return {Boolean}
+*/
+const isPhoneNum = (str: [String,Number])=>Boolean
+```
+
+### 实例
+
+```javascript
+let str = '18319546951'
+let isTrue = isPhoneNum(str);
+
+/**
+*输出：
+* isTrue = true;
+*/
+
+```

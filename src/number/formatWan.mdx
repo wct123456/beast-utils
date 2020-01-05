@@ -1,0 +1,33 @@
+---
+menu: Number
+name: formatWan 金额以万为单位
+route: /number/formatWan
+---
+import '../docz.less'
+
+# formatWan
+把金额大于 10000 时 ，转成 以‘万’为单位
+
+### 参数
+
+```typescript
+/**
+* 把金额转成 以万为单位
+* @param val<string|number>
+*
+*/
+const formatWan = (val) => string;
+```
+
+### 实例
+
+```javascript
+let val  = 566000
+let money = formatWan(val);
+
+/**
+* 输出：
+* money = 56.6万
+*/
+
+```

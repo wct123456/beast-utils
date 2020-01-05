@@ -1,0 +1,38 @@
+---
+menu: Query
+name: formatFilter 搜索条件
+route: /query/formatFilter
+---
+import '../docz.less'
+
+# formatFilter
+对搜索的条件进行特殊化处理，符合后端的传参逻辑，用作搜索
+
+### 参数
+
+```typescript
+/**
+* 模糊搜索
+* @param searchData<Object>
+* @param { fuzzyMatch, search, filterData } = searchData
+* @return <Object>
+*/
+
+const formatFilter = (searchData = {})=>Object
+```
+
+### 实例
+
+```javascript
+let searchData = {
+fuzzyMatch: 'code,name',
+search:'wct'
+}
+let search = formatFilter(searchData);
+
+/**
+* 输出：
+* 在 code，name 中搜索符合“wct”的字符
+*/
+
+```

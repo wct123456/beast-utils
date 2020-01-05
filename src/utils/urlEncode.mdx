@@ -1,0 +1,36 @@
+---
+menu: Utils
+name: urlEncode URL加密
+route: /utils/urlEncode
+---
+import '../docz.less'
+
+# urlEncode
+传入一个对象，加密后变成URL所需的参数 &key = value
+
+### 参数
+
+```typescript
+/**
+* 传入一个对象，加密后变成URL所需的参数 key = value
+* @param obj<Object>
+*
+*/
+const urlEncode = (obj) => string;
+```
+
+### 实例
+
+```javascript
+let param  = {
+    name:'wct',
+    code:'123'
+}
+let code = urlEncode(param);
+
+/**
+*加密输出：
+*code = *****=****&***=****
+*/
+
+```

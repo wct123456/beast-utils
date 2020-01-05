@@ -1,0 +1,33 @@
+---
+menu: Lang
+name: isUrl 是否Url
+route: /lang/isUrl
+---
+import '../docz.less'
+
+# isUrl
+对 Url 进行判断，返回 true 或者 false
+
+### 参数
+
+```typescript
+/**
+* 判断 Url 是否正确
+* @param path{String}
+*  @return {Boolean}
+*/
+const isUrl = (path)=>Boolean
+```
+
+### 实例
+
+```javascript
+let path = 'http://www.thinkphp.cn/topic/44921.html'
+let url = isUrl(path);
+
+/**
+*输出：
+* url = true;
+*/
+
+```

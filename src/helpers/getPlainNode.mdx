@@ -1,0 +1,82 @@
+---
+menu: Helpers
+name: getPlainNode Menu菜单
+route: /helper/getPlainNode
+---
+import '../docz.less'
+
+# getPlainNode
+对 menu 菜单栏进行过滤,或增加上级路由 parentPath
+
+### 参数
+
+```typescript
+/**
+* menu 菜单
+* @param nodeList {Array}
+* @param parentPath {string | null}
+* @return {Array}
+*/
+const getPlainNode = (nodeList, parentPath = '')=>Array
+```
+
+### 实例
+
+```javascript
+let nodeList = [
+  {
+    icon: 'database',
+    name: '公司校验',
+    en: 'Checklist ',
+    key: '/Checklist',
+    path: '/Checklist',
+    children:[
+      {
+        icon: 'database',
+        name: '处理子公司校验',
+        en: 'Subsidiary Checklist',
+        key: '/subCheckList',
+        path: '/subCheckList',
+      },
+    ]
+  },
+  {
+      icon: 'database',
+      name: '更新账套属性',
+      en: 'Update Entity Property ',
+      key: '/updateEntityProperty',
+      path: '/updateEntityProperty',
+    },
+];
+let parentPath = 'afc'
+let getPlain = getPlainNode(nodeList,parentPath);
+
+/**
+*输出：
+* getPlain = [
+*  {
+*    icon: 'database',
+*    name: '公司校验',
+*    en: 'Checklist ',
+*    key: 'afc/Checklist',
+*    path: 'afc/Checklist'
+*  },
+*  {
+*   icon: 'database',
+*   name: '处理子公司校验',
+*   en: 'Subsidiary Checklist',
+*   key: 'afc/subCheckList',
+*   path: 'afc/subCheckList',
+*  },
+*  {
+*   icon: 'database',
+*   name: '更新账套属性',
+*   en: 'Update Entity Property ',
+*   key: 'afc/updateEntityProperty',
+*   path: 'afc/updateEntityProperty',
+*   }
+* ];
+*
+*/
+
+```

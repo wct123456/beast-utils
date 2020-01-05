@@ -1,0 +1,33 @@
+---
+menu: Date
+name: getDateFormats 日期格式
+route: /date/getDateFormats
+---
+import '../docz.less'
+
+# getDateFormats
+获取支持输入的日期格式，一般用于设置 DatePicker 组件的 format 属性
+
+### 参数
+
+```typescript
+/**
+* 获取支持输入的日期格式，一般用于设置 DatePicker 组件的 format 属性
+* @returns {string[]}
+*
+*/
+const getDateFormats = () => (['YYYY-MM-DD', 'YYYY/MM/DD', 'YYYYMMDD', 'YYYY-M-D', 'YYYY/M/D']);
+```
+
+### 实例
+
+```javascript
+
+let data = getDateFormats();
+
+/**
+*输出：
+* data = ['YYYY-MM-DD', 'YYYY/MM/DD', 'YYYYMMDD', 'YYYY-M-D', 'YYYY/M/D'];
+*/
+
+```

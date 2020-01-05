@@ -1,3 +1,3 @@
-import {recurAddKeyAndFileds} from '../src/array'
+import {recurAddKeyAndFileds} from '../src/array/index'
 
 // recurAddKeyAndFileds([])

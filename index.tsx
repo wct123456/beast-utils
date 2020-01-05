@@ -1,2 +1,2 @@
-export * from './src/array'
-export * from './src/number'
+export * from './src/array/index'
+export * from './src/number/index'

@@ -1,0 +1,40 @@
+---
+menu: Date
+name: previewPeriod 回显中文期间
+route: /date/previewPeriod
+---
+import '../docz.less'
+
+# previewPeriod
+根据开始和结束期间，回显对应的中文
+
+### 参数
+
+```typescript
+/**
+* 根据开始和结束期间，回显对应的中文
+* @param beginPeriod <Object>
+* @param endPeriod <Object>
+* @returns {string}
+*/
+const previewPeriod = (beginPeriod, endPeriod) => '';
+```
+
+### 实例
+
+```javascript
+let beginPeriod = {
+    name:'2019/12/31'
+};
+let endPeriod = {
+    name:'2020/1/1'
+};
+let str = previewPeriod(beginPeriod, endPeriod);
+
+/**
+*输出
+*str = '2019/12/31 至 2020/1/1'
+*
+*/
+
+```

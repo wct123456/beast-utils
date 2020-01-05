@@ -1,0 +1,40 @@
+---
+menu: Helpers
+name: getQueryPath 拼接 url
+route: /helper/getQueryPath
+---
+import '../docz.less'
+
+# getQueryPath
+对 页面 路由（href）中参数的拼接，返回完整的 url
+
+### 参数
+
+```typescript
+/**
+* 拼接 url
+* @param path<string>
+* @param query<Object>
+* @return string
+*
+*/
+const getQueryPath = (path='',query={})=>string
+```
+
+### 实例
+
+```javascript
+let path ='http://www.baidu.com';
+let query = {
+name:'李现',
+age:'30'
+}
+let param = getQueryPath(path,query);
+
+/**
+* 输出：
+* param = 'http://www.baidu.com?name=李现&age=30'
+*
+*/
+
+```
