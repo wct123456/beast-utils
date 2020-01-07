@@ -1,6 +1,6 @@
 {
   "name": "beast-utils",
-  "version": "0.0.2-beta.4",
+  "version": "0.0.2-beta.6",
   "description": "一个工具方法库",
   "repository": "https://github.com/laixstx/beast-utils.git",
   "keywords": [
@@ -19,15 +19,16 @@
     "es/*",
     "src/*"
   ],
-  "main": "dist/beast.js",
-  "module": "dist/beast.esm.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
-    "build": "father build",
+    "f:build": "father build",
+    "build": "sh ./scripts/build.sh",
+    "node:dep": "node ./scripts/npm_deploy.js",
     "doc:dev": "father doc dev",
     "doc:build": "father doc build",
-    "doc:deploy": "father doc deploy",
+    "doc:dep": "father doc deploy",
     "doc:sh": "sh ./scripts/doc_deploy.sh",
-    "npm:pub": "npm publish",
     "npm:reg": "npm config set registry https://registry.npmjs.org/",
     "npm:tb": "npm config set registry http://registry.npm.taobao.org/"
   },
