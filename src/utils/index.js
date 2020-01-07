@@ -1,6 +1,5 @@
 import {trim,isEmpty,isObject,forEach} from "lodash-es";
-const  cryptoCore  = require('./cryptoCore')
-const  cryptoSha1  = require('./cryptoSha1')
+import cryptoCore from  './cryptoCore'
 
 
 export function urlEncode(param) {

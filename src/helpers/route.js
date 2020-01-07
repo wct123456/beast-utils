@@ -1,7 +1,4 @@
 import {parse, stringify} from "qs";
-import {clearStorage, getStorage} from "../utils";
-import router from "umi/router";
-
 export function getPlainNode(nodeList, parentPath = '') {
     const arr = [];
     nodeList.forEach(node => {
@@ -163,11 +160,3 @@ export function getQueryPath(path = '', query = {}) {
     }
     return path;
 }
-export const getUserInfo = () => {
-    const userInfo = getStorage('userInfo');
-    if (null === userInfo) {
-        clearStorage();
-        router.push('/user');
-    }
-    return userInfo;
-};
