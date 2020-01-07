@@ -6,7 +6,7 @@ route: /number/formatWan
 import '../docz.less'
 
 # formatWan
-把金额大于 10000 时 ，转成 以‘万’为单位
+把金额大于 10000 时 ，转成 以‘万’为单位的DOM元素,并向下取“整”万
 
 ### 参数
 
@@ -14,9 +14,9 @@ import '../docz.less'
 /**
 * 把金额转成 以万为单位
 * @param val<string|number>
-*
+* @return DOM元素
 */
-const formatWan = (val) => string;
+const formatWan = (val) => DOM;
 ```
 
 ### 实例
@@ -26,8 +26,8 @@ let val  = 566000
 let money = formatWan(val);
 
 /**
-* 输出：
-* money = 56.6万
+* 输出：56万
+*
 */
 
 ```

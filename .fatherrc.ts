@@ -2,8 +2,8 @@ import {IBundleOptions} from 'father'
 
 // @ts-ignore
 const options: IBundleOptions = {
-    entry: 'index.tsx',
-    file: 'beast',
+    // entry: 'index.tsx',
+    // file: 'beast',
     esm: {
         // type: 'babel'
         type: 'rollup'

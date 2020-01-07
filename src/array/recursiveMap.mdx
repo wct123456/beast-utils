@@ -14,11 +14,13 @@ import '../docz.less'
 /**
  * 递归为对象数组里的对象，添加 key 字段以及其他额外字段
  * @param data Array<Object>
- * @param keyAccordName String 默认是'id'；为对象添加的'key'字段，是参照对象里哪个原有的字段 作为值的
- * @param addFields Array<Array(2)> 需要添加的字段信息，是个二维数组，例如：[['name', 'title'], ['code', 'keyCode']]，表示添加的'title'字段值为’name'字段的值，以此类推
+ * @param fun<function> (item,index,parentObj)=>{} 是一个函数，对数组中的对象进行处理，并返回处理后的对象
+ * @param parentObj<Object> 需要的额外参数,在fun中当作参数传入
+ * @param childKeyName = 'children' 需要递归的 children 字段
  * @returns {Array}
  */
-const recurAddKeyAndFileds = (data: Array<any>, keyAccordName = 'id', addFields = []) => []
+ const recursiveMap = (arr,fun,parentObj = {}, childKeyName = 'children')=>[]
+
 ```
 
 ### 示例
@@ -55,7 +57,40 @@ const newArr = recursiveMap(arr, (value, key, parentValue) => {
 console.log(newArr);
 
 ```
+# recurAddKeyAndFileds
+
+```typescript
+/**
+ * 递归为对象数组里的对象，添加 key 字段以及其他额外字段
+ * @param data Array<Object>
+ * @param keyAccordName String 默认是'id'；为对象添加的'key'字段，是参照对象里哪个原有的字段 作为值的
+ * @param addFields Array<Array(2)> 需要添加的字段信息，是个二维数组，例如：[['name', 'title'], ['code', 'keyCode']]，表示添加的'title'字段值为’name'字段的值，以此类推
+ * @returns {Array}
+ */
+const recurAddKeyAndFileds = (data: Array<any>, keyAccordName = 'id', addFields = []) => []
+
+```
+
+### 示例
+
+```typescript
+ let data = [
+    {id:1,name:211},
+    {id:2}
+    ];
+ let data = recurAddKeyAndFileds(data,'id',[['name','title']])
+
+/**
+* 输出：
+* data = [
+* {id:1,name:211,title:211},
+* {id:2}
+* ]
+*/
+```
+
 # recurRemoveFields
+
 ### 数组对象中 删除 Key
 
 ```typescript

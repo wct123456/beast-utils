@@ -1,0 +1,33 @@
+---
+menu: Query
+name: getValueNoNull 判断 NULL
+route: /query/getValueNoNull
+---
+import '../docz.less'
+
+# getValueNoNull
+对传入的参数 value 进行判断，为 NULL ，或者 UNDEFINED 返回 空，否则返回 value；
+
+### 参数
+
+```typescript
+/**
+* 判断 NULL
+* @param value<any>
+*/
+
+const getValueNoNull = (value)=>any
+```
+
+### 实例
+
+```javascript
+let value = 'null'
+let NoNull = getValueNoNull(value);
+
+/**
+* 输出：
+* NoNull = 'null'
+*/
+
+```

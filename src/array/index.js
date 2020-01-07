@@ -19,8 +19,8 @@ export const recurAddKeyAndFileds = (data, keyAccordName = 'id', addFields = [])
 
         addFields && addFields.forEach(fields => {
 
-            if (fields && fields[0] && fields[1] && pObj && pObj[fields[0]]) {
-                reObj[fields[1]] = pObj[fields[0]];
+            if (fields && fields[0] && fields[1] && reObj && reObj[fields[0]]) {
+                reObj[fields[1]] = reObj[fields[0]];
             }
         });
         return reObj;

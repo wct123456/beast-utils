@@ -12,7 +12,7 @@ import '../docz.less'
 
 ```typescript
 /**
- * 对比两个对象的值是否相等（只支持基础数据类型的比较）needCheckAttrs (需要忽略的属性 key)
+ * 对比两个对象的值是否相等（只支持基础数据类型的比较）needCheckAttrs (需要比较的属性 key),默认比较全部
  *@param srcObj<Object>
  *@param othObj<Object>
  *@param needCheckAttrs<Array>
@@ -36,7 +36,7 @@ let othObj = {
     codeValue:'wct'
 };
 let needCheckAttrs = ['codeValue']
-let had = isObjectValueEmpty(srcObj,othObj,needCheckAttrs);
+let had = isObjectValEqual(srcObj,othObj,needCheckAttrs);
 
 /**
 * 输出：
