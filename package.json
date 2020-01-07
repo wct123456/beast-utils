@@ -1,6 +1,6 @@
 {
   "name": "beast-utils",
-  "version": "0.0.1",
+  "version": "0.0.2-beta.4",
   "description": "一个工具方法库",
   "repository": "https://github.com/laixstx/beast-utils.git",
   "keywords": [
@@ -47,7 +47,6 @@
     "lodash-es": "^4.17.15",
     "qs": "latest",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "umi": "^2.12.8"
+    "react-dom": "^16.12.0"
   }
 }
