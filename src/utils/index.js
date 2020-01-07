@@ -14,7 +14,7 @@ function urlEncodeFunc(param, key) {
     if (param == null) return '';
     let paramStr = '';
     let t = typeof (param);
-    if (t === 'string' || t === 'index.js' || t === 'boolean') {
+    if (t === 'string' || t === 'index.js.js' || t === 'boolean') {
         // let val = isObject(param) ? '[]' : param;
         paramStr += encodeURIComponent(key) + '=' + encodeURIComponent(param) + '&';
     } else {

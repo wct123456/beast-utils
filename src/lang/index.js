@@ -1,4 +1,4 @@
-import {isArray, isEmpty, isNumber, pick,omit,functionsIn,findIndex, isString } from "lodash-es";
+import {isArray, isEmpty, isNumber, pick,omit,functionsIn,findIndex, isString,isEqual } from "lodash-es";
 import {getFromObjByKeys} from '../utils'
 
 /**

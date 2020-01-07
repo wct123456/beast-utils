@@ -1,4 +1,5 @@
 import moment from 'dayjs'
+import {trim} from 'lodash-es'
 
 /**
  * 当前系统的 日期格式
